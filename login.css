@@ -1,0 +1,21 @@
+body {
+   
+}
+
+#left {
+    background-image: url('backgroundImage.jpg') ;
+}
+
+#right {
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
