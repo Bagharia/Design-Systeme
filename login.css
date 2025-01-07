@@ -39,6 +39,10 @@ body {
     padding: 40px;
 }
 
+#right h1 {
+    font-size: 50px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -52,8 +56,32 @@ main {
 }
 
 #input {
-    padding: 10px;
+    padding: 15px;
     border: 1px solid black;
-    border-radius: 20px;
-    margin: 10px;
+    border-radius: 28px;
+    margin: 15px;
+    font-size: 20px;
+    width: 90%;
+}
+
+#link {
+    color: #b596e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 8px;
+}
+
+#link:hover {
+    color: #D7C8F3;  
+    text-decoration: underline; 
+}
+
+#button {
+    border: 1px solid #7C5CBF;
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 15px;
+    width: 30%;
+    background-color:#7C5CBF ;
+    color: #f4f4f4;
 }
