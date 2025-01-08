@@ -16,6 +16,7 @@ const Input = ({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        
         disabled={disabled}
         className={`input ${error ? 'input-error' : ''}`}
       />
