@@ -1,8 +1,57 @@
 .input {
     padding: 15px;
     border: 1px solid black;
-    border-radius: 28px;
-    margin: 15px;
-    font-size: 20px;
-    width: 90%;
-}
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input--small {
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 50%;
+    font-size: 16px;
+  }
+  
+  .input--medium {
+    padding: 15px;
+    width: 75%;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+  }
+  
+  .input--large {
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+  }
+  
+  .input--error {
+    border-color: red;
+  }
+  
+  .input:focus {
+    border-color: blue;
+    box-shadow: 0 0 3px rgba(0, 0, 255, 0.5);
+  }
+  
+  .input:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  .input-container {
+    margin: 15px 0;
+  }
+  
+  .input-error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  

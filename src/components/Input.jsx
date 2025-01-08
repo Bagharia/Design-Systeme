@@ -1,28 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './../stories/Input.css';
 
-const Input = ({
-  type = 'text', // Le type d'input (text, password, email, etc.)
-  placeholder = '', // Le placeholder de l'input
-  value = '', // La valeur de l'input
-  onChange, // Fonction appelée quand la valeur change
-  disabled = false, // Désactiver ou non l'input
-  error = '', // Message d'erreur (affiché si non vide)
-}) => {
+
+
+const Input = React.forwardRef(({ size, placeholder, disabled, error, ...props }, ref) => {
+  const sizeClass = size ? `input--${size}` : '';
+  const errorClass = error ? 'input--error' : '';
+
   return (
     <div className="input-container">
       <input
-        type={type}
+        ref={ref}
+        type="text"
+        className={['input', sizeClass, errorClass].join(' ')}
         placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        
         disabled={disabled}
-        className={`input ${error ? 'input-error' : ''}`}
+        aria-invalid={!!error}
+        {...props}
       />
-      {error && <span className="error-text">{error}</span>}
+      {error && <span className="input-error-message">{error}</span>}
     </div>
   );
+});
+
+Input.propTypes = {
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  placeholder: PropTypes.string,
+  disabled: PropTypes.bool,
+  error: PropTypes.string,
 };
 
-export default Input;
+Input.defaultProps = {
+  size: 'medium',
+  placeholder: '',
+  disabled: false,
+  error: null,
+};
+
+export default Input; // Ensure this is the default export
