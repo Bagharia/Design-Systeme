@@ -2,13 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './../stories/Input.css';
 
-const Input = React.forwardRef(({ size, placeholder, disabled, error, ...props }, ref) => {
+const Input = React.forwardRef(({ size, label, placeholder, disabled, error, ...props }, ref) => {
   const sizeClass = size ? `input--${size}` : '';
   const errorClass = error ? 'input--error' : '';
 
+  const inputId = label ? label.replace(/\s+/g, '-').toLowerCase() : '';
+
   return (
     <div className="input-container">
-      <label className="input-label">Label</label>
+      <h1>Input</h1>
+      {label && (
+        <label htmlFor={inputId} className="input-label">
+          {label}
+        </label>
+      )}
       <input
         ref={ref}
         type="text"
@@ -18,6 +25,7 @@ const Input = React.forwardRef(({ size, placeholder, disabled, error, ...props }
         aria-invalid={!!error}
         {...props}
       />
+      
       {error && <span className="input-error-message">{error}</span>}
     </div>
   );
@@ -25,6 +33,7 @@ const Input = React.forwardRef(({ size, placeholder, disabled, error, ...props }
 
 Input.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large']),
+  label: PropTypes.string,
   placeholder: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.string,
@@ -32,6 +41,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   size: 'medium',
+  label:'',
   placeholder: 'Enter text...',
   disabled: false,
   error: null,
