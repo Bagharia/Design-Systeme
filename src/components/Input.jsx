@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './../stories/Input.css';
 
-
-
 const Input = React.forwardRef(({ size, placeholder, disabled, error, ...props }, ref) => {
   const sizeClass = size ? `input--${size}` : '';
   const errorClass = error ? 'input--error' : '';
 
   return (
     <div className="input-container">
+      <label className="input-label">Label</label>
       <input
         ref={ref}
         type="text"
@@ -33,9 +32,9 @@ Input.propTypes = {
 
 Input.defaultProps = {
   size: 'medium',
-  placeholder: '',
+  placeholder: 'Enter text...',
   disabled: false,
   error: null,
 };
 
-export default Input; // Ensure this is the default export
+export default Input;
