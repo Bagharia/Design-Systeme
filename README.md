@@ -1,4 +1,4 @@
-# Design-Systeme
+# Design-System
 
 Durant ce projet, nous avons mis en pratique les bases des Design Tokens et du Design System.
 Nous avons collaboré en équipe composée de managers de projet, designers, et développeurs pour créer une base solide et cohérente pour nos interfaces.
