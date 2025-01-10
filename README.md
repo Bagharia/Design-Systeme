@@ -43,14 +43,12 @@ npm run build-storybook
 npm run storybook
 ```
 
-### Voir le storybook
-
-https://www.chromatic.com/build?appId=677ff0b34d7bd79ef8fb7440&number=2
-
 ### Figma
 
 https://www.figma.com/design/JDYi4rbyW6cNN6kGn0Wnm1/EQUIPE_6_Design_system?node-id=15-2&t=7mbsKMOUNlYdLg9x-1
 
+# Consulter le storybook 
+https://designbook-three.vercel.app/?path=/docs/configure-your-project--docs
 
 ## Contributeurs au projet
 
