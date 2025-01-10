@@ -35,6 +35,13 @@ En développement, nous avons mis en œuvre les composants et styles définis da
 git clone https://github.com/Bagharia/Design-Systeme.git
 cd Design-Systeme
 ```
+
+## Exécuter le projet
+
+```bash
+npm run storybook
+```
+
 ### Voir le storybook
 
 [https://www.chromatic.com/build?appId=677ff0b34d7bd79ef8fb7440&number=2](https://677ff0b34d7bd79ef8fb7440-aqampbyzey.chromatic.com/?path=/docs/configure-your-project--docs)
