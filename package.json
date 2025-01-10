@@ -20,6 +20,7 @@
     "@storybook/react": "^8.4.7",
     "@storybook/react-vite": "^8.4.7",
     "@storybook/test": "^8.4.7",
+    "chromatic": "^11.22.2",
     "prop-types": "^15.8.1",
     "storybook": "^8.4.7"
   }
