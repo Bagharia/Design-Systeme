@@ -19,7 +19,7 @@ L’objectif de Storybook était de documenter et de visualiser les composants c
 * Configuration de Storybook pour assurer une intégration fluide dans le projet.
 * Déploiement de Storybook en ligne afin de partager facilement l’avancement du Design System avec toute l’équipe.
 
-### Développemnt web
+### Développement web
 
 En développement, nous avons mis en œuvre les composants et styles définis dans Figma pour construire un Design System :
 * Respect des Design Tokens définis dans Figma pour assurer la cohérence visuelle entre les designs et le code.
