@@ -15,7 +15,7 @@ Dans cette partie, notre objectif était de poser les bases du Design System en 
 ### Storybook
 
 L’objectif de Storybook était de documenter et de visualiser les composants créés, afin de permettre aux équipes techniques de travailler efficacement :
-* Développement d’histoires pour chaque composant, avec leurs différents états et variantes.
+* Développement d’histoires pour chaque composant, avec leurs différents états et variants.
 * Configuration de Storybook pour assurer une intégration fluide dans le projet.
 * Déploiement de Storybook en ligne afin de partager facilement l’avancement du Design System avec toute l’équipe.
 
