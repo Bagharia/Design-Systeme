@@ -42,11 +42,11 @@ cd Design-Systeme
 npm run storybook
 ```
 
-### Figma
+## Figma
 
 https://www.figma.com/design/JDYi4rbyW6cNN6kGn0Wnm1/EQUIPE_6_Design_system?node-id=15-2&t=7mbsKMOUNlYdLg9x-1
 
-# Consulter le storybook 
+## Consulter le storybook 
 
 https://designbook-three.vercel.app/?path=/docs/configure-your-project--docs
 
