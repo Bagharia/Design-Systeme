@@ -57,12 +57,20 @@ main {
 
 #input {
     padding: 15px;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 28px;
     margin: 15px;
     font-size: 20px;
     width: 90%;
+    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
+
+#input:hover {
+    border-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
 
 #link {
     color: #b596e5;
@@ -77,11 +85,26 @@ main {
 }
 
 #button {
-    border: 1px solid #7C5CBF;
+    border: 2px solid #7C5CBF;
     border-radius: 28px;
     font-size: 20px;
     padding: 15px;
     width: 30%;
     background-color:#7C5CBF ;
     color: #f4f4f4;
+}
+
+#button:hover {
+    padding: 15px;
+    border: 2px solid #8F73D2;
+    border-radius: 28px;
+    background-color: #8F73D2;
+    color: white;
+    font-size: 20px;
+}
+
+#button a {
+    text-decoration: none;   
+    cursor: pointer;  
+    color: white;
 }
