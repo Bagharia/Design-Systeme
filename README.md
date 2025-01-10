@@ -39,7 +39,6 @@ cd Design-Systeme
 ## Exécuter le storybook
 
 ```bash
-npm run build-storybook
 npm run storybook
 ```
 
