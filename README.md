@@ -36,9 +36,10 @@ git clone https://github.com/Bagharia/Design-Systeme.git
 cd Design-Systeme
 ```
 
-## Exécuter le projet
+## Exécuter le storybook
 
 ```bash
+npm run build-storybook
 npm run storybook
 ```
 
