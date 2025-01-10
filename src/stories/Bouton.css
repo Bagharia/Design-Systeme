@@ -1,3 +1,9 @@
+.input-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
 .button {
     padding: 10px 20px;
     border: 2px solid #7C5CBF;
@@ -49,42 +55,3 @@
     font-weight: bold;
 }
 
-.secondary--button {
-    padding: 10px 20px;
-    border: 2px solid #F80B0B;
-    border-radius: 20px;
-    background-color: #F80B0B;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.secondary--hover {
-    padding: 10px 20px;
-    border: 2px solid #FF3D3D;
-    border-radius: 20px;
-    background-color: #FF3D3D;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.secondary--active {
-    padding: 10px 20px;
-    border: 2px solid #D10A0A;
-    border-radius: 20px;
-    background-color: #D10A0A;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.secondary--disabled {
-    padding: 10px 20px;
-    border: 2px solid #B596E5;
-    border-radius: 20px;
-    background-color: #B596E5;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}

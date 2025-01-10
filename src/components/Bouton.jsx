@@ -6,14 +6,18 @@ const Button = ({ size, label, disabled, onClick, ...props }) => {
   const sizeClass = size ? `button--${size}` : '';
 
   return (
-    <button
-      className={['button', sizeClass].join(' ')}
-      disabled={disabled}
-      onClick={onClick}
-      {...props}
-    >
-      {label}
-    </button>
+    <div className="button-container">
+      <h1>Button</h1>
+      <p>This is the default configuration of this component.</p>
+      <button
+        className={['button', sizeClass].join(' ')}
+        disabled={disabled}
+        onClick={onClick}
+        {...props}
+      >
+        {label}
+      </button>
+    </div>
   );
 };
 
